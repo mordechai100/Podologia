@@ -228,14 +228,10 @@ public class TelaLogin extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                                TelaLogin tela = new TelaLogin();  
-                            tela.setLocationRelativeTo(null);  
-                            tela.setVisible(true);  
-                
-                
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            TelaLogin tela = new TelaLogin();
+            tela.setLocationRelativeTo(null);
+            tela.setVisible(true);
         });
     }
 
